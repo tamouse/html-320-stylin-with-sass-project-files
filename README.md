@@ -8,13 +8,13 @@ be appropriate. The definition in the w3c for the `<article>` element is:
 
 > The article element represents a complete, or self-contained, composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.
 
-If we look where the `woman` article is defined, however, we see another hodge-podge 
+If we look where the `woman` article is defined, however, we see another hodge-podge
 of things.
 
 * `#famous article.women` defines some aspects of the style and behaviour
 * `#famous h2` is defining a bare element that is only used in this class,
   while `h2` is defined in `_elements` as well affecting this article.
-* `#famouse article` and it's `hover` variant create new behaviour, 
+* `#famous article` and it's `hover` variant create new behaviour, 
   regardless of the `.women` class.
 * and so on.
 
@@ -33,7 +33,7 @@ Remember also the rule that our CSS selectors are *only* classes, no id's or ele
 
 ## Cleaning up media queries
 
-In the last exercise, we neglected to look at how media queries in the `_overrides` file 
+In the last exercise, we neglected to look at how media queries in the `_overrides` file
 affected the page header and footer. Let's clean those up now, along with the ones that affect
 our newly created `.woman-card` object.
 
@@ -45,4 +45,3 @@ This is also a great opportunity to create a couple of global settings in `_sett
 
 1. `$mobile-width` of 460px
 2. `$tablet-width` of 920px
-
