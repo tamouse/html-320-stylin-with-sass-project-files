@@ -1,0 +1,31 @@
+/* Header */
+header {
+  background-color: #009D92;
+  padding: 10px;
+}
+header h1 {
+  color: #FFEECC;
+  background: url('../images/icons/it.png') no-repeat 0 50%;
+  padding-left: 40px;
+}
+header nav {
+  float: right;
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+header nav li {
+  line-height: 75px;
+}
+header nav a {
+  border-radius: 6px;
+}
+header nav a:hover {
+  background-color: #fff;
+}
+
+header:after {
+  /* clearfix hack */
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,3 +1,71 @@
 // this is where the bare elements, such as `html`, `body`, `p`, 'h1` through `h6` get styled
 // this is after the resets, etc, applied in the `_general.scss` file, and are the next level
 // of specificity down.
+
+
+/* General Styles */
+body {
+  background-color: rgb(241, 241, 241);
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin: 0px auto;
+  width: 100%;
+}
+
+
+p {
+  margin: 1em;
+}
+
+
+a {
+  color: #1D766F;
+  text-decoration: none;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #BC2F36;
+}
+
+
+h1 {
+  font-family: 'Audiowide', cursive;
+  font-size: 2.2em;
+  float: left;
+  line-height: 75px;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.25);
+}
+
+h2 {
+  background-color: rgb(60, 60, 60);
+  color: #FFF;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.4em;
+  font-weight: 400;
+  line-height: 80px;
+  margin: 0 0 0.5em 0;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 0 0 0.3em 0;
+  text-align: center;
+}
+
+h4 {
+  color: rgb(120, 120, 120);
+  font-size: 1em;
+  text-align: center;
+}
+
+@import "navigation";
+@import "header";
+@import "footer";
