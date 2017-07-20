@@ -1,0 +1,31 @@
+// Extract the header element entries and paste them into the page header file
+/* Header */
+.site-header {
+  background-color: #009D92;
+  padding: 10px;
+  h1 {
+    color: #FFEECC;
+    background: url('../images/icons/it.png') no-repeat 0 50%;
+    padding-left: 40px;
+  }
+  nav {
+    float: right;
+    font-size: 1.2em;
+    margin-left: 20px;
+    li {
+      line-height: 75px;
+      a {
+        border-radius: 6px;
+      }
+      a:hover {
+        background-color: #fff;
+      }
+    }
+  }
+  &:after {
+    /* clearfix hack */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
